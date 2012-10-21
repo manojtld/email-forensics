@@ -1,0 +1,1 @@
+Milestone 1Create input database grammar files : 1 - 2 hoursCode for extracting the features (Part 1): 5 - 6 hours Create a document / report for sample input and use statistics tools to verify it. Document these properly : 10 - 12 hours
