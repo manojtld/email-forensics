@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+using namespace std;
 
 int main(int argc, const char * argv[])
 {
@@ -23,7 +24,6 @@ int main(int argc, const char * argv[])
 	int numbers = 0;
 	int spaces = 0;
 	int punctuation = 0;
-	int len = 0;
 	int tabs = 0;
 	int ascii;
 
@@ -70,9 +70,9 @@ int main(int argc, const char * argv[])
 			{
 				punctuation++;
 			}
-			else if(ch == '/t')
+			else if(ch == '\t')
 			{
-				tabs++
+				tabs++;
 			}
 			
             else
@@ -81,11 +81,11 @@ int main(int argc, const char * argv[])
             }
 			
 	}
-	letters = uppercase+lowercase
+	letters = uppercase+lowercase;
 	cout << "countletters are " << letters << endl;
 	cout << "characters are " << characters << endl; 
 	cout << "letter to character count ratio" << letters/characters <<endl;
-	cout << "digits to character count ratio" << digits/characters <<endl;
+	cout << "digits to character count ratio" << numbers/characters <<endl;
 	cout << "uppercase letters to character count ratio" << uppercase/characters <<endl;
 	cout << "tabs to character count ratio" << tabs/characters <<endl;
 	
