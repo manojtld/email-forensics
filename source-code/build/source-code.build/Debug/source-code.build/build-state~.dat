@@ -1,0 +1,63 @@
+Tsource-code
+v5
+r1
+cCheck dependencies
+cCompileC build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.o "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp" normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/source-code" normal x86_64
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk
+c00000000506FB82E00000000000000AA
+t1349498926
+s170
+
+N/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/source-code
+t2
+s0
+
+N/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.o
+t2
+s0
+
+N/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/source-code.LinkFileList
+c000000005084FCA30000000000000089
+t1350892707
+s137
+
+N/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp
+c000000005084FC8A00000000000006A4
+t1350892682
+s1700
+i<iostream>
+i<string>
+i<fstream>
+
+CBuild AST from "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp"
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies83151b233435b641^54701c233435b641^---0#1#0#--18"Check dependencies36"BCEABD9D-DA8A-4E6D-992E-2116A6AB11EC-
+
+CCompileC build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.o "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp" normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s372585507.115818
+e372585507.919469
+r1
+xCompileC
+xbuild/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.o
+x/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp
+xnormal
+xx86_64
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Compile /Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp4cdd1d233435b641^d060eb233435b641^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/gunaprsd/Documents/CS213%20&%20CS293/Project/source-code/source-code/main.cpp0000000000000000^3030"CompileC build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.o source-code/main.cpp normal x86_64 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code"    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch x86_64 -fmessage-length=0 -std=gnu++11 -stdlib=libc++ -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.8 -g -fvisibility-inlines-hidden -Wno-sign-conversion -iquote "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/source-code-generated-files.hmap" "-I/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/source-code-own-target-headers.hmap" "-I/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/source-code-all-target-headers.hmap" -iquote "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/source-code-project-headers.hmap" "-I/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/include" -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include "-I/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/DerivedSources/x86_64" "-I/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/DerivedSources" "-F/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug" -MMD -MT dependencies -MF "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.d" --serialize-diagnostics "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.dia" -c "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/source-code/main.cpp" -o "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/main.o"36"9B319117-D0A1-4FB1-9810-1AF47D1D0A96-
+
+CLd "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/source-code" normal x86_64
+s372585507.926514
+e372585509.255976
+r1
+xLd
+x/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/source-code
+xnormal
+xx86_64
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection88"Link /Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/source-code6f4aed233435b641^e88741253435b641^---0#0#0#--821"Ld build/Debug/source-code normal x86_64    cd "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code"    setenv MACOSX_DEPLOYMENT_TARGET 10.8    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk "-L/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug" "-F/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug" -filelist "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/source-code.build/Debug/source-code.build/Objects-normal/x86_64/source-code.LinkFileList" -mmacosx-version-min=10.8 -stdlib=libc++ -o "/Users/gunaprsd/Documents/CS213 & CS293/Project/source-code/build/Debug/source-code"36"8E7ABE42-139B-40A6-9349-2D4331D61637-
+
