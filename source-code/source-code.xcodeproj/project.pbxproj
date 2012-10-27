@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE1BD36C163BCA2500143239 /* LexicalLetterFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE1BD36A163BCA2500143239 /* LexicalLetterFeatures.cpp */; };
+		FE1BD36F163BCA3900143239 /* LexicalWordFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE1BD36D163BCA3900143239 /* LexicalWordFeatures.cpp */; };
+		FE1BD372163BCA5000143239 /* LexicalStructureFeatures.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE1BD370163BCA5000143239 /* LexicalStructureFeatures.cpp */; };
 		FE4FD0B216343BB300DE2128 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE4FD0B116343BB300DE2128 /* main.cpp */; };
 		FE4FD0B416343BB300DE2128 /* source_code.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE4FD0B316343BB300DE2128 /* source_code.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +28,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FE1BD36A163BCA2500143239 /* LexicalLetterFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LexicalLetterFeatures.cpp; sourceTree = "<group>"; };
+		FE1BD36B163BCA2500143239 /* LexicalLetterFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexicalLetterFeatures.h; sourceTree = "<group>"; };
+		FE1BD36D163BCA3900143239 /* LexicalWordFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LexicalWordFeatures.cpp; sourceTree = "<group>"; };
+		FE1BD36E163BCA3900143239 /* LexicalWordFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexicalWordFeatures.h; sourceTree = "<group>"; };
+		FE1BD370163BCA5000143239 /* LexicalStructureFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LexicalStructureFeatures.cpp; sourceTree = "<group>"; };
+		FE1BD371163BCA5000143239 /* LexicalStructureFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LexicalStructureFeatures.h; sourceTree = "<group>"; };
 		FE4FD0AD16343BB300DE2128 /* source-code */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "source-code"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4FD0B116343BB300DE2128 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FE4FD0B316343BB300DE2128 /* source_code.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = source_code.1; sourceTree = "<group>"; };
@@ -62,6 +71,12 @@
 			children = (
 				FE4FD0B116343BB300DE2128 /* main.cpp */,
 				FE4FD0B316343BB300DE2128 /* source_code.1 */,
+				FE1BD36A163BCA2500143239 /* LexicalLetterFeatures.cpp */,
+				FE1BD36B163BCA2500143239 /* LexicalLetterFeatures.h */,
+				FE1BD36D163BCA3900143239 /* LexicalWordFeatures.cpp */,
+				FE1BD36E163BCA3900143239 /* LexicalWordFeatures.h */,
+				FE1BD370163BCA5000143239 /* LexicalStructureFeatures.cpp */,
+				FE1BD371163BCA5000143239 /* LexicalStructureFeatures.h */,
 			);
 			path = "source-code";
 			sourceTree = "<group>";
@@ -118,6 +133,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4FD0B216343BB300DE2128 /* main.cpp in Sources */,
+				FE1BD36C163BCA2500143239 /* LexicalLetterFeatures.cpp in Sources */,
+				FE1BD36F163BCA3900143239 /* LexicalWordFeatures.cpp in Sources */,
+				FE1BD372163BCA5000143239 /* LexicalStructureFeatures.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +228,7 @@
 				FE4FD0B916343BB300DE2128 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

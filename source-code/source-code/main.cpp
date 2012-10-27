@@ -11,6 +11,11 @@
 #include <fstream>
 using namespace std;
 
+
+/*Edit main.cpp to make appropriate calls
+ First addCharacter to LexicalLetterFeatures Class
+ Then based on return call LexicalWordFeatures appropriately. Remember you have to keep appending every letter to form the string to pass to LexicalWordFeatures. */
+
 int main(int argc, const char * argv[])
 {
 
