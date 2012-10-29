@@ -128,6 +128,46 @@ float LexicalWordFeatures::yules-measure()  {
 
 
 
+string LexicalWordFeatures::hapex-legomena {
+
+map<string,int>::iterator ite;
+ite = wordMap.begin();
+while(ite != wordMap.end())
+{
+ if((*ite).second == 1)
+ string k = (*ite).first;
+ legomena-vector.push_back(k);
+ ite++;
+}
+
+ vector<string>::iterator it;
+ for ( it=legomena-vector.begin() ; it < legomena-vector.end(); it++ )
+ cout << " " << *it;
+
+}
+
+string LexicalWordFeatures::hapex-dislegomena {
+
+map<string,int>::iterator ite;
+ite = wordMap.begin();
+while(ite != wordMap.end())
+{
+ if((*ite).second == 1)
+ string k = (*ite).first;
+ dislegomena-vector.push_back(k);
+ ite++;
+}
+
+ vector<string>::iterator it;
+ for ( it=dislegomena-vector.begin() ; it < dislegomena-vector.end(); it++ )
+ cout << " " << *it;
+
+}
+
+
+
+ 
+
 /* 
  
  Hapax Legomena : Outputs all words that have been used only once
