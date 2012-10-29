@@ -9,6 +9,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include "LexicalWordFeatures.cpp"
 using namespace std;
 
 
@@ -35,6 +36,7 @@ int main(int argc, const char * argv[])
 	int punctuation = 0;
 	int tabs = 0;
 	int ascii;
+        string word;
     int token_count= 0;
     int sentence_count = 0; //note sentence does not mean a sentence, it is a clause
     float average_letter_count = 0.0;
@@ -65,26 +67,38 @@ int main(int argc, const char * argv[])
                 /*sentence metrics update*/
                 average_word_count = (average_word_count*sentence_count + sentence_word_count)/++sentence_count;
                 sentence_word_count = 0;
+
+               W.addSentence(word);
+		W.addWord(word);
+		word = '';
             
             }
 			else if((ascii>64)&&(ascii<91))
 			{
 			    uppercase++; word_letter_count++;
+                            word = word+ch;
+				W.incrementCharacterCount();
 			}
 			
 			else if((ascii>96)&&(ascii<123))
 			{
 				lowercase++; word_letter_count++;
+                                  word = word+ch;
+				W.incrementCharacterCount();
 			}
 			
 			else if((ascii>=39)&&(ascii<=64))
 			{
-                characters++; 
-			}
+                               characters++; 
+				word = word+ch;
+				W.incrementCharacterCount();
+	    		}
 			
 			else if(isdigit(ch))
 			{
 				numbers++;
+				word = word+ch;
+				W.incrementCharacterCount();
 			}
 			
 			else if(isspace(ch))
@@ -93,15 +107,22 @@ int main(int argc, const char * argv[])
                 average_letter_count = (average_letter_count*token_count + word_letter_count)/++token_count;
                 word_letter_count = 0;
                 sentence_word_count++;
+
+                                W.addWord(word);
+				W.incrementCharacterCount();
 			}
 			
-            else if(ispunct(ch))
+                   else if(ispunct(ch))
 			{
 				punctuation++;
                 
                 /*word metrics update*/
                 average_letter_count = (average_letter_count*token_count + word_letter_count)/++token_count;
                 word_letter_count = 0;
+                          
+				W.incrementCharacterCount();
+				word = word+ch;
+              
             }
 
 			else if(ch == '\t')
@@ -110,6 +131,8 @@ int main(int argc, const char * argv[])
                 average_letter_count = (average_letter_count*token_count + word_letter_count)/++token_count;
                 word_letter_count = 0;
                 ++sentence_word_count;
+		W.addWord(word);
+		W.addSentence(word);
                 
 			}
             else if (ch == '.') {
@@ -119,11 +142,16 @@ int main(int argc, const char * argv[])
                 sentence_word_count++;
                 average_word_count = (average_word_count*sentence_count + sentence_word_count)/++sentence_count;
                 sentence_word_count = 0;
+		W.incrementCharacterCount();
+		W.addWord(word);
+		W.addSentence(word);
             }
 			
             else
             {
             	specialchars++;
+		W.incrementCharacterCount();
+		word = word+ch;
             }
 			
 	}
@@ -139,6 +167,9 @@ int main(int argc, const char * argv[])
     cout << "total number of sentences "<<sentence_count<<endl;
     cout << "average words in a sentence" << average_word_count<<endl;
     cout << "average letters in a word"<<average_letter_count<<endl;
+    cout << "yules k measure of the text is" <<W.yules-measure<<endl;
+    cout << "
+    
     
 	
 	file.close();
