@@ -51,6 +51,82 @@ void LexicalWordFeatures::addSentence(string s) {
         wordMap[s]++;
     }
 }
+            //returns the number of words with the length i
+
+int LexicalWordFeatures::wordnumber(int i) {
+
+    map<string,int>::iterator it;
+    int count = 0;
+    it = wordmap.begin();
+    while(it != wordmap.end()) {
+    string k = (*it).first;
+    if(k.length() == i)
+       oount = count+(*it).second;
+
+    it++;
+    }
+    return count;
+    }
+
+//returns number of words in a map k that have appeared i times
+
+int word-number(map<string,int> k,int i) {
+
+    map<string,int>::iterator it;
+    it = k.begin();
+    int count = 0;
+    while(it != k.end()) {
+    if((*it).second == i)
+     count++;
+    }
+    return count;
+    }
+
+int LexicalWordFeatures::yules-measure() {
+
+   
+    map<string,int>::iterator it;
+    it = wordmap.begin();
+    int high;
+    while(it != wordmap.end()) {
+    if((*it).second > high)
+     high = (*it).second;
+    }
+
+    it = wordmap.begin();
+    int i=1;
+    int sum = 0;
+    nt squaresum = 0;
+    while(i <= high) {
+ 
+     int k = word-number(wordmap,i);
+     sum = sum + i*k;
+     squaresum = squaresum + i*i*k;
+     i++;it++;
+    }
+
+    float yules = 10*10*10*10(squaresum - 1)/(sum * sum);
+    
+    return yules;
+
+    }
+
+
+     
+
+
+
+
+
+
+    
+
+
+float LexicalWordFeatures::yules-measure()  {
+
+
+
+
 
 /* 
  
